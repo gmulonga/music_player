@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
+import 'package:music_player/constants.dart';
 
 class Searchbar extends StatefulWidget {
   Searchbar({
@@ -17,22 +17,17 @@ class Searchbar extends StatefulWidget {
 }
 
 class _SearchbarState extends State<Searchbar> {
-
   @override
   Widget build(BuildContext context) {
-
     return Padding(
       padding: EdgeInsets.symmetric(vertical: 5, horizontal: 10),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           TextField(
-            style: TextStyle(color: Colors.black),
+            style: TextStyle(color: kBlack),
             onChanged: (value) {
-              setState(() {
-
-              });
-
+              setState(() {});
               if (widget.onChanged != null) {
                 widget.onChanged!(value);
               }
@@ -42,34 +37,33 @@ class _SearchbarState extends State<Searchbar> {
             decoration: InputDecoration(
               fillColor: Colors.transparent,
               contentPadding:
-              EdgeInsets.symmetric(vertical: 14.0, horizontal: 16.0),
+                  EdgeInsets.symmetric(vertical: 14.0, horizontal: 16.0),
               filled: true,
               border: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(20.0),
               ),
               enabledBorder: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(20.0),
-                borderSide:
-                BorderSide(color: Colors.grey),
+                borderSide: BorderSide(color: kGrey),
               ),
               focusedBorder: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(20.0),
-                borderSide: BorderSide(color: Colors.grey),
+                borderSide: BorderSide(color: kGrey),
               ),
-              suffixIcon:  IconButton(
+              suffixIcon: IconButton(
                 icon: Icon(
                   Icons.search,
-                  color: Colors.grey,
+                  color: kGrey,
                 ),
                 onPressed: () {
                   setState(() {
                     print(widget.controller?.text ?? "");
                   });
                 },
-
+              ),
             ),
-          ),
-          )],
+          )
+        ],
       ),
     );
   }
