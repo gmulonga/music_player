@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:music_player/screens/homePage.dart';
+import 'package:music_player/presentation/screens/homePage.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
