@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:music_player/constants.dart';
+import 'package:music_player/core/constants.dart';
 import 'package:audio_video_progress_bar/audio_video_progress_bar.dart';
 
 class PlayMusicPage extends StatefulWidget {

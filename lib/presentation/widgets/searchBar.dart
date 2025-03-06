@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:music_player/constants.dart';
+import 'package:music_player/core/constants.dart';
 
 class Searchbar extends StatefulWidget {
   Searchbar({

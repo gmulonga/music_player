@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:music_player/constants.dart';
+import 'package:music_player/core/constants.dart';
 import 'package:music_player/presentation/screens/play_music_page.dart';
 
 class musicCard extends StatelessWidget {
